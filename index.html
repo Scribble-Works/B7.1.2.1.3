@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponent Match-Up Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Exponent Match-Up</h1>
+        <p class="objective">Express the **Target Number** as a product of powers of the given base numbers.</p>
+
+        <div class="target-box">
+            <p>Target Number:</p>
+            <div id="target-number">?</div>
+        </div>
+
+        <div class="problem-area">
+            <div id="expression-container">
+                </div>
+            <div id="equals-sign">=</div>
+            <div class="check-box">
+                 <button id="check-button">Check</button>
+            </div>
+        </div>
+
+        <div id="feedback-area" class="feedback">Click "New Problem" to start!</div>
+
+        <button id="next-button" onclick="loadNewProblem()">New Problem</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

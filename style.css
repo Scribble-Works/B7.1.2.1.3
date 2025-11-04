@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.game-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.objective {
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.target-box {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+#target-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 5px;
+}
+
+.problem-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 50px; /* Ensures space for the expression */
+}
+
+.base-number {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.exponent-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    margin-left: -10px; /* Pull exponent up and over base */
+    position: relative;
+    top: -15px;
+    background: #fff;
+}
+
+#equals-sign {
+    font-size: 2em;
+    margin: 0 15px;
+}
+
+#check-button, #next-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+#check-button {
+    background-color: #ffc107;
+    color: #333;
+}
+
+#next-button {
+    background-color: #007bff;
+    color: white;
+    margin-top: 15px;
+}
+
+#check-button:hover { background-color: #e0a800; }
+#next-button:hover { background-color: #0056b3; }
+
+.feedback {
+    min-height: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.correct {
+    color: #28a745;
+}
+
+.incorrect {
+    color: #dc3545;
+}
